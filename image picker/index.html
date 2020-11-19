@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+    <style>
+        .body {
+            margin: 200px;
+        }
+
+        #gambar {
+            width: 400px;
+            margin-left: 23px;
+        }
+
+        .gambar {
+            margin-left: 25px;
+        }
+
+        body {
+            align-content: center;
+            margin: 200px auto;
+            width: 450px;
+            padding: 6px;
+            border: 3px solid black;
+            box-shadow: 4px 4px 8px black;
+            background: green;
+        }
+
+        #listgambar {
+            width: 450px;
+            text-align: center;
+            border-bottom: 30px;
+            margin: 20px auto;
+            margin-right: 60px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>SURAH PENDEK</h2>
+    <select onchange="gantigambar();" id="listgambar">
+        <option value="portfolio/alquran.jpeg" class="gambar">PILIH SURAH</option>
+        <option value="portfolio/annas.jpg">AN-NAS</option>
+        <option value="portfolio/alfalaq.jpeg">AL-FALAQ</option>
+        <option value="portfolio/alikhlas.jpeg">AL-IKHLAS</option>
+        <option value="portfolio/alahab.jpeg">AL-LAHAB</option>
+        <option value="portfolio/annasr.jpeg">AN-NASR</option>
+        <option value="portfolio/alkafirun.jpeg">AL-KAFIRUN</option>
+    </select>
+    <br />
+    <img src="portfolio/alquran.jpeg" alt="" id="gambar">
+</body>
+
+<script type="text/javascript">
+
+    function gantigambar() {
+        let gambar = document.getElementById("listgambar").value;
+        document.getElementById("gambar").src = gambar;
+        alert("Ini Gambar " + gambar);
+    }
+</script>
+
+</html>

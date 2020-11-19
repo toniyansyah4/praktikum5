@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Mata Uang</title>
+    <link rel="stylesheet" href="item/style.css">
+</head>
+
+<body>
+    <form id="frm1">
+        <form>
+            <h3>KURS MATA UANG</h3>
+            <img src="item/kurs.jfif">
+            <hr>
+            <label>Masukan Banyak Nilai : </label>
+            <input type="text" id="nilai" value="">
+            <hr>
+            <p>Pilih Mata Uang:
+                <select name='Mata Uang' id="kurs">
+                    <option value="dollar" id="dollar">Dollar US</option>
+                    <option value="dollarsg" id="dollarsg">Dollar Singapore</option>
+                    <option value="ringgit" id="ringgit">Ringgit Malaysia</option>
+                    <option value="yen" id="yen">Yen Jepang</option>
+                    <option value="euro" id="euro">Euro</option>
+                    <option value="riyal" id="riyal">Riyal Arab Saudi</option>
+                </select>
+                <hr>
+            <h4 id="hasil"></h4>
+            <hr>
+            <input type="button" value="tukar" name="tukar" onclick="ubah()">
+            </p>
+        </form>
+        <script src="item/script.js"></script>
+</body>
+
+</html>

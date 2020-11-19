@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <title>Chat</title>
+    <style>
+        form {
+            width: 20%;
+            height: 50px;
+            padding-left: 30px;
+            line-height: 50px;
+            background: #333;
+            color: #fff;
+            border-radius: 50px;
+            border: 1px solid purple;
+            box-shadow: 2px 2px 4px purple;
+        }
+        }
+
+        .frm {
+            position: unset;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="isichat">
+
+    </div>
+
+    <form class="frm" method="REQUEST" onsubmit="return kirim();">
+        <input id="message" style="width: 50%" type="text" name="pesan">
+        <button type="submit" onclick="return kirim();">KIRIM</button>
+    </form>
+
+</body>
+<script type="text/javascript">
+    function kirim() {
+        let pesan = document.getElementById("message").value;
+        document.getElementById("isichat").innerHTML += pesan + "<br/>";
+        document.getElementById("message").value = "";
+        return false;
+    }
+</script>
+
+</html>
