@@ -5,10 +5,9 @@ function login() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    if (username == "toni" && password == "123467") {
-        // alert("selamat anda berhasil login!!!");
-        window.location = "halaman/halaman.html";
-        return false;
+    if (username == "toni" && password == "1234567") {
+
+        return true;
     } else {
         alert('Anda harus mengisi data dengan benar!');
         return false;

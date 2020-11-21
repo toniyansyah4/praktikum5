@@ -1,0 +1,23 @@
+body {
+    background-color: #6e6eff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    width: 230px;
+    box-shadow: 8px 8px 10px #93fcff;
+    background-color: #dda0a0;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -120px;
+    left: 50%;
+    top: 50%;
+}
+
+img {
+    height: 100px;
+}

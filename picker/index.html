@@ -4,23 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Image Picker</title>
     <!-- <script src="script.js"></script> -->
     <style>
         .body {
             margin: 200px;
         }
-
+        
         #gambar {
             width: 400px;
             margin-left: 23px;
         }
-
+        
         .gambar {
             margin-left: 25px;
         }
-
+        
         body {
             align-content: center;
             margin: 200px auto;
@@ -30,7 +29,7 @@
             box-shadow: 4px 4px 8px black;
             background: green;
         }
-
+        
         #listgambar {
             width: 450px;
             text-align: center;
@@ -38,7 +37,7 @@
             margin: 20px auto;
             margin-right: 60px;
         }
-
+        
         h2 {
             text-align: center;
         }
@@ -49,20 +48,19 @@
 <body>
     <h2>SURAH PENDEK</h2>
     <select onchange="gantigambar();" id="listgambar">
-        <option value="portfolio/alquran.jpeg" class="gambar">PILIH SURAH</option>
-        <option value="portfolio/annas.jpg">AN-NAS</option>
-        <option value="portfolio/alfalaq.jpeg">AL-FALAQ</option>
-        <option value="portfolio/alikhlas.jpeg">AL-IKHLAS</option>
-        <option value="portfolio/alahab.jpeg">AL-LAHAB</option>
-        <option value="portfolio/annasr.jpeg">AN-NASR</option>
-        <option value="portfolio/alkafirun.jpeg">AL-KAFIRUN</option>
+        <option value="assets/alquran.jpeg" class="gambar">PILIH SURAH</option>
+        <option value="assets/annas.jpg">AN-NAS</option>
+        <option value="assets/alfalaq.jpeg">AL-FALAQ</option>
+        <option value="assets/alikhlas.jpeg">AL-IKHLAS</option>
+        <option value="assets/alahab.jpeg">AL-LAHAB</option>
+        <option value="assets/annasr.jpeg">AN-NASR</option>
+        <option value="assets/alkafirun.jpeg">AL-KAFIRUN</option>
     </select>
     <br />
-    <img src="portfolio/alquran.jpeg" alt="" id="gambar">
+    <img src="assets/alquran.jpeg" alt="" id="gambar">
 </body>
 
 <script type="text/javascript">
-
     function gantigambar() {
         let gambar = document.getElementById("listgambar").value;
         document.getElementById("gambar").src = gambar;
